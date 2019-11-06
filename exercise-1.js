@@ -1,9 +1,9 @@
 function angkaPrima(angka) {
     // you can only write your code here!
     while (true) {
-        if (angka % 2 == 0 && angka != 2) {
+        if (angka % 2 == 0 && angka > 2) { // jika angka genap selain 2 maka salah
             return false;
-        } else if (angka % 3 == 0 && angka > 3) {
+        } else if (angka % 3 == 0 && angka > 3) { // jika angka kelipatan 3 maka salah
             return false;
         } else {
             return true;

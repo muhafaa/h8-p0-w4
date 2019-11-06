@@ -1,21 +1,19 @@
 function ubahHuruf(kata) {
     // you can only write your code here!
-    var obj = {
-        abc : 'abcdefghijklmnopqrstuvwxy',
-        newWord : ''
-    };
+    var abjad = 'abcdefghijklmnopqrstuvwxy';
+    var newWord = '';
     for (var i = 0; i < kata.length; i++) {
-        for (var k = 0; k < obj.abc.length; k++) {
-            if (kata[i] == obj.abc[k]) {
-                obj.newWord += obj.abc[k+1];
+        for (var k = 0; k < abjad.length; k++) { //sesuaikan kata dengan abjad
+            if (kata[i] == abjad[k]) { // jika sama
+                newWord += abjad[k+1]; // ganti ke abjad berikutnya
                 break;
-            } else if (kata[i] == 'z') {
-                obj.newWord += 'a';
+            } else if (kata[i] == 'z') { // jika z maka a
+                newWord += 'a';
                 break;
             }
         }
     }
-    return obj.newWord;
+    return newWord;
   }
   
   // TEST CASES

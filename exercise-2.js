@@ -2,12 +2,12 @@ function fpb(angka1, angka2) {
   // you can only write your code here!
   var result = 0;
   var max = null;
-  if (angka1 > angka2) {
+  if (angka1 > angka2) { // bandingkan nilai mana yang lebih besar
     max = angka1;
   } else {
     max = angka2;
   }
-  for (var i = max; i > 0; i--) {
+  for (var i = max; i > 0; i--) { // mencari bilangan yang dapat membagi habis kedua nilai
       if (angka1 % i == 0 && angka2 % i == 0) {
           return i;
       }

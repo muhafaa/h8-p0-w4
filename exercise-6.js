@@ -1,12 +1,14 @@
 function digitPerkalianMinimum(angka) {
     // you can only write your code here!
-    var obj = {};
-    for (var i = angka/2; i > 2; i--) {
-        if (angka % i == 0) {
-            obj[angka/i] = i;
+    for (var i = angka; i >0 ; i--) { // angka menurun
+        if (i * i == angka) { // jika akar angka
+            return String(String(i)+String(i)).length;
+        } else if (angka % i == 0) { // jika dapat dibagi habis
+            if (i < angka/i) { // nilai pengali yang paling akhir
+                return String(String(angka/i)+String(i)).length;
+            }
         }
     }
-    return obj;
   }
   
   // TEST CASES

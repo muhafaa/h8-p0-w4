@@ -3,20 +3,17 @@ function checkAB(str) {
     var temp = false;
     
     for (var index = 0;index <= str.length;index++) {
-        switch (str[index]) {
+        switch (str[index]) { 
             case 'a':
-                if(str[index+4] == 'b'){
+                if(str[index+4] == 'b'){ // jika a ketemu b jarak 3 karakter
                     return true;
                 }
                 break;
                 
             case 'b':
-                if(str[index+4] == 'a'){
+                if(str[index+4] == 'a'){ // jika b ketemu a jarak 3 karakter
                     return true;
                 }
-                break;
-        
-            default:
                 break;
         }
     }

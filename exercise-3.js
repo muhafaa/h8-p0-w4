@@ -1,9 +1,9 @@
 function cariMedian(arr) {
     // you can only write your code here!
-    if (arr.length % 2 == 0) {
-        return (arr[arr.length/2] + arr[(arr.length/2)-1])/2;
-    } else {
-        return arr[Math.floor(arr.length/2)];
+    if (arr.length % 2 == 0) { // genap
+        return (arr[arr.length/2] + arr[(arr.length/2)-1])/2; // ambil 2 nilai pada index tengah arr
+    } else { // ganjil
+        return arr[Math.floor(arr.length/2)]; //ambil nilai pada index tengah arr
     }
   }
   
