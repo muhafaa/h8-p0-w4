@@ -4,8 +4,9 @@ function changeMe(arr) {
       return console.log("");
     }
     var year = new Date().getFullYear(); // tahun sekarang
-    var obj = [{},{}];
+    var obj = [];
     for (var i = 0; i < arr.length; i++) { // masukkan data dari arr ke obj
+      obj.push({});
       obj[i].firstName = arr[i][0];
       obj[i].lastName = arr[i][1];
       obj[i].gender = arr[i][2];
