@@ -1,15 +1,14 @@
 function angkaPrima(angka) {
     // you can only write your code here!
-    while (true) {
-        if (angka % 2 == 0 && angka > 2) { // jika angka genap selain 2 maka salah
+    var divider = 2;
+    while (divider <= Math.sqrt(angka)) {
+        if (angka % divider == 0) {
             return false;
-        } else if (angka % 3 == 0 && angka > 3) { // jika angka kelipatan 3 maka salah
-            return false;
-        } else {
-            return true;
         }
+        divider++;
     }
-  }
+    return true;
+}
   
   // TEST CASES
   console.log(angkaPrima(3)); // true
